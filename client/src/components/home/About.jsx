@@ -5,11 +5,11 @@ const About = () => {
   return (
     <div className="w-full min-h-screen bg-black px-0">
       <div className="w-full h-full flex flex-col lg:flex-row">
-        {/* Left  Side - Image */}
-        <div className="w-full lg:w-1/2 h-64 lg:h-full">
+        {/* Left Side - Image */}
+        <div className="w-full lg:w-1/2 h-80 sm:h-96 md:h-[32rem] lg:h-full">
           <img
             src="/images/82736.jpg"
-            className="w-full h-screen object-cover"
+            className="w-full h-full object-cover"
             alt="Why Choose O4+"
           />
         </div>
