@@ -1,50 +1,23 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
-// Product Highlights Section
 const ProductHighlights = () => {
   return (
-    <div
-      className="w-full py-16 sm:py-20"
-      style={{
-        backgroundImage: `url("/images/938834.jpg")`,
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
-      }}
-    >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        {/* Section Header */}
-        <div className="text-start mb-12 sm:mb-16">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-[#baa263] mb-4">
-            Our Premium Offering
-          </h2>
-          <p className="text-gray-50 text-base sm:text-lg max-w-xl">
-            Engineered for excellence, designed for those who demand the best in
-            water purification.
-          </p>
-        </div>
-
-        {/* Bottle Images & Text */}
-        <div className="flex flex-col lg:flex-row justify-between items-center gap-10">
-          {/* Bottles */}
-          <div className="flex justify-center gap-8 sm:gap-10">
-            <img
-              src="/images/98736.png"
-              className="w-24 sm:w-32 md:w-36 h-auto drop-shadow-2xl transform hover:scale-105 transition-transform duration-300"
-              alt="Bottle 1"
-            />
-            <img
-              src="/images/987987.png"
-              className="w-24 sm:w-32 md:w-36 h-auto drop-shadow-2xl transform hover:scale-105 transition-transform duration-300"
-              alt="Bottle 2"
-            />
-          </div>
-
-          {/* Highlight Text */}
-          <div className="text-[#baa263] text-center lg:text-start text-4xl sm:text-5xl md:text-6xl font-bold tracking-wider leading-tight">
-            <h3>Ultra-Pure</h3>
-            <h3 className="py-3">Drinking</h3>
-            <h3>Water</h3>
+    <div className="w-full min-h-screen py-16 sm:py-20 md:py-24 lg:py-28 relative bg-black overflow-hidden">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="flex items-center justify-center">
+          <div className="">
+            <div className="">
+              <h2 className="text-center text-5xl font-semibold text-[#baa263]">Our Products</h2>
+            </div>
+            <div className="flex gap-10 py-10">
+              <div>
+                <img src="/images/250ml.png" className="w-100" alt="" />
+              </div>
+              <div>
+                <img src="/images/1lr.png" className="w-100" alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>

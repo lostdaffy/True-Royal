@@ -3,65 +3,142 @@ import { Link } from "react-router-dom";
 
 const About = () => {
   return (
-    <div className="w-full h-screen bg-black flex items-center justify-center px-0">
-      <div className="w-full h-full">
-        <div className="flex flex-col lg:flex-row h-full">
-          {/* Left Side - Image */}
-          <div className="w-full lg:w-1/2 h-1/2 lg:h-full overflow-hidden">
-            <img
-              src="/images/82736.jpg"
-              className="w-full h-full object-cover"
-              alt="O4+ True Professional"
-            />
+    <div className="w-full min-h-screen bg-black px-0">
+      <div className="w-full h-full flex flex-col lg:flex-row">
+        {/* Left  Side - Image */}
+        <div className="w-full lg:w-1/2 h-64 lg:h-full">
+          <img
+            src="/images/82736.jpg"
+            className="w-full h-screen object-cover"
+            alt="Why Choose O4+"
+          />
+        </div>
+
+        {/* Right Side - Content */}
+        <div className="lg:w-1/2 p-8 lg:p-12">
+          <div className="text-[#baa263] text-base font-bold mb-2">
+            About O4+
           </div>
 
-          {/* Right Side - Text Content */}
-          <div className="w-full lg:w-1/2 h-1/2 lg:h-full p-6 md:p-10 flex items-center justify-center">
-            <div className="overflow-y-auto max-h-full w-full">
-              <div className="text-center lg:text-left">
-                <h2 className="text-gray-50 text-3xl md:text-4xl font-bold pb-5">
-                  About <br />
-                  <span className="text-[#baa263] font-semibold">
-                    O4+ True Professional
-                  </span>
-                </h2>
+          <h1 className="text-3xl lg:text-4xl font-bold text-gray-50 mb-6 leading-tight">
+            O4+ True Professional Water - Performance in Every Drop
+          </h1>
 
-                <p className="text-green-50 text-base md:text-lg">
-                  At <strong>O4+ True Professional</strong>, we believe that{" "}
-                  <strong>
-                    water is not just hydration— <br /> it's the foundation of
-                    life, energy, and wellness
-                  </strong>
-                  . With this belief, we have created a premium line of{" "}
-                  <strong>energy-boosting, ultra-pure drinking water</strong>{" "}
-                  designed for those who demand more from every drop they consume.
+          <p className="text-gray-100 mb-8 leading-relaxed">
+            At O4+ True Professional, we believe that water is not just
+            hydration—it's the foundation of life, energy, and wellness. <br /> Crafted
+            by True Royal Industries Pvt. Ltd., O4+ Water is more than just
+            packaged drinking water—it's a symbol of purity, performance, and
+            power, designed for the health-conscious, the active, and the elite.
+          </p>
+
+          {/* Services Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="flex items-start space-x-3">
+              <div className="w-6 h-6 bg-[#baa263] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <svg
+                  className="w-4 h-4 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-semibold text-[#baa263] mb-1">
+                  Ultra-Purified 8-Stage Filtration
+                </h3>
+                <p className="text-sm text-gray-50">
+                  Rigorous purification including UV sterilization, RO
+                  filtration, and mineral balancing - 99.99% contaminant-free
                 </p>
+              </div>
+            </div>
 
-                <ul className="list-none space-y-2 text-left pt-10 text-white text-base">
-                  <li>
-                    <i className="ri-arrow-right-double-line text-[#baa263] mr-2"></i>
-                    Scientifically balanced for performance
-                  </li>
-                  <li>
-                    <i className="ri-arrow-right-double-line text-[#baa263] mr-2"></i>
-                    Enhanced with natural minerals & electrolytes
-                  </li>
-                  <li>
-                    <i className="ri-arrow-right-double-line text-[#baa263] mr-2"></i>
-                    Stylish, premium packaging
-                  </li>
-                  <li>
-                    <i className="ri-arrow-right-double-line text-[#baa263] mr-2"></i>
-                    Ideal for gyms, offices, hotels, and daily wellness
-                  </li>
-                  <li>
-                    <i className="ri-arrow-right-double-line text-[#baa263] mr-2"></i>
-                    Backed by a visionary brand with international roots
-                  </li>
-                </ul>
+            <div className="flex items-start space-x-3">
+              <div className="w-6 h-6 bg-[#baa263] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <svg
+                  className="w-4 h-4 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-semibold text-[#baa263] mb-1">
+                  Energy-Infused Technology
+                </h3>
+                <p className="text-sm text-gray-50">
+                  Ion-balanced electrolytes and oxygen-boosting technology
+                  designed for athletes and high-performance individuals
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-3">
+              <div className="w-6 h-6 bg-[#baa263] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <svg
+                  className="w-4 h-4 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-semibold text-[#baa263] mb-1">
+                  Premium Packaging
+                </h3>
+                <p className="text-sm text-gray-50">
+                  Sleek, modern bottle with black and metallic gold accents that
+                  complements your lifestyle and image
+                </p>
+              </div>
+            </div>
+
+            <div className="flex items-start space-x-3">
+              <div className="w-6 h-6 bg-[#baa263] rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                <svg
+                  className="w-4 h-4 text-white"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </div>
+              <div>
+                <h3 className="font-semibold text-[#baa263] mb-1">
+                  100% Food-Grade, BPA-Free
+                </h3>
+                <p className="text-sm text-gray-50">
+                  High-grade, recyclable, BPA-free plastic bottles that comply
+                  with FSSAI, BIS, and international quality standards
+                </p>
               </div>
             </div>
           </div>
+
+          {/* CTA Button */}
+          <Link to="" className="bg-[#baa263] hover:bg-[#baa263] text-white px-8 py-3 rounded-full font-medium transition-colors duration-200">
+            <i className="ri-arrow-right-up-long-line"></i> About Us
+          </Link>
         </div>
       </div>
     </div>
