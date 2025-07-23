@@ -3,7 +3,9 @@ import HeroNew from "../components/home/HeroNew";
 import About from "../components/home/About";
 import ProductHighlights from "../components/home/ProductHighlights";
 import WhyChooseO4 from "../components/home/WhyChooseO4";
-import ContactForm from "../components/global/ContactForm";
+import GetInTouch from "../components/global/GetInTouch";
+import AboutCompany from "../components/home/AboutCompany";
+import Locations from "../components/home/Locations";
 
 const Home = () => {
   return (
@@ -13,7 +15,9 @@ const Home = () => {
         <About />
         <ProductHighlights />
         <WhyChooseO4 />
-        <ContactForm />
+        <AboutCompany />
+        <Locations />
+        <GetInTouch />
       </div>
     </>
   );
